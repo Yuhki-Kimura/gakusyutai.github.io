@@ -1,4 +1,5 @@
 # 公式ホームページ
+gakusyutai.github.io
 
 ## ファイル名とタブの関係
 
