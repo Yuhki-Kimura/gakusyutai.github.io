@@ -1,5 +1,5 @@
 # 公式ホームページ
-gakusyutai.github.io
+[gakusyutai.github.io](https://gakusyutai.github.io/)
 
 ## ファイル名とタブの関係
 
