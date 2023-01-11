@@ -14,6 +14,11 @@ body{
   /*height: 60px;*/
 }
 
+/*楽習隊アイコンのサイズ変更*/
+.title img{ 
+  width: 150px;
+}
+
 img{
     width: 150px;
 }
