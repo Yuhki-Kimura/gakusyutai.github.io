@@ -1,0 +1,18 @@
+<!--[index.html] フッター要素のところ-->
+
+<h2 class="sns-navi">
+          <!--
+          <li><img src="2021 Twitter logo - white.png"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          <li><img src="Instagram_Glyph_Gradient_RGB.png"><i class="fab fa-instagram"></i></a></li>
+          -->
+            <li>公式Twitter / Instagram : @gakushu_tai</li>
+            <img src="./Twitter social icons - circle - blue.png" alt="Twitter_楽習隊">  <!--1/12追加, まだ未完成-->
+            <li>Mail : gakushutai@gmail.com</li>
+ </h2>
+ 
+ <!--[style1.css]-->
+.content{
+  margin: 0px;
+  padding: 0px 80px;
+}
