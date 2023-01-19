@@ -1,3 +1,54 @@
+<!--1/19の変更>
+
+<!--[index.html] フッター要素のところ-->
+
+<footer id="footer"> 
+    <section class="primary">
+      <!--<p class="logo"><img src="./logo.png"></p>--> <!--ロゴはフッターに載せない-->
+      
+      <div class="navi-row">
+        <!--
+        <h2 class="navi">
+          Follow Me!
+        </h2>
+        -->
+        <h2 class="sns-navi">
+          <!--
+          <li><img src="2021 Twitter logo - white.png"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          <li><img src="Instagram_Glyph_Gradient_RGB.png"><i class="fab fa-instagram"></i></a></li>
+          -->
+          <!--0129byおきむ:Twitterのアイコンとリンク-->
+            <li>公式Twitter / Instagram : @gakushu_tai</li>
+            <a href="https://twitter.com/gakushu_tai" target="_blank"><img src="./Twitter social icons - circle - blue.png" alt="Twitter_楽習隊"></a>
+            <li>Mail : gakushutai@gmail.com</li>
+        </h2>
+      </div>
+    </section>
+    <section class="secondary">
+      <p class="copyright">Copyright WEBSITE,2021, 楽習隊</p> <!--著作権-->
+    </section>
+</footer>
+
+ <!--[style1.css]　footer .sns-navi　imgを追加-->
+ 
+ #footer .sns-navi li {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  padding: 0;
+  font-size: 20px;
+}
+#footer .sns-navi li:last-child {
+  margin-right: 0;
+}
+
+/*以下はおきむが追加0129*/
+#footer .sns-navi img {
+  width:50px;
+  height:50px;
+  padding:0px;
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
 <!--[index.html] フッター要素のところ-->
 
 <h2 class="sns-navi">
