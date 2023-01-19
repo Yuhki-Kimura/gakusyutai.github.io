@@ -1,5 +1,9 @@
 # 公式ホームページ
-リンク：[gakusyutai.github.io](https://gakusyutai.github.io/)
+リンク：[https://gakusyutai.github.io/](https://gakusyutai.github.io/)
+<p>旧リンク：https://yuyu31.github.io/gakusyutai/</p>
+
+2023/1/19追記
+<p>旧リンクから新リンクへのリダイレクト設定完了</p>
 
 ## ファイル名とタブの関係
 
