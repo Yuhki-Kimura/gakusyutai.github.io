@@ -30,7 +30,7 @@ a{
 }
 
 a:hover{ /*文字列の上にポインタを置いた場合をホバーという*/
-  opacity: .5; /*ホバー状態で透明度*50%*/
+  opacity: .5; /*ホバー状態で透明度50%*/
 }
 
 ul { /*複数の画像を横並びで表示*/
@@ -84,6 +84,21 @@ li:nth-child(2) {
   padding: 0 10px; /*2つ目の値で要素の間隔を規定*/
   margin-left: 20px;
 }
+
+/*2/9追加分（そーちゃん）*/
+.thumbnail{
+  height: 400px;
+  width: 800px;
+  text-align: center;
+  margin:0 300px;
+  
+}
+
+.thumbnail img{
+  height: 100%;
+  width: 100%;
+}
+/*追加分終了*/
 
 
 /*ここからフッター要素*/
