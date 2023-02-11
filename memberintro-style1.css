@@ -1,0 +1,75 @@
+/*ここから自分が追加した要素　↓↓↓↓↓↓↓↓↓↓ */
+
+/*「ー隊員紹介」のフォント*/
+.content h2{
+  margin-left:200px;
+  font-family:"Hiragino Sans";
+  color:orange;
+}
+
+
+
+/*隠れたアイコンを右スクロールで見えるようにする。
+まとめて div{ にすると、アイコン内部もスクロールされて変になってしまう。。どうしたらいい？*/
+div {
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+/*そーちゃん*/
+
+.so-chan{
+  float: left; /*左端から450pt右に固定。中央揃えにはしていない。*/
+  width: 300px; 
+  height: 300px; 
+  margin-top: 100px;
+  margin-left: 450px; 
+  margin-right: 700px;
+  margin-bottom: 300px;
+}
+.so-chan img{
+  width: 100%;
+  height: 100%;
+}
+
+/*空白スペースの大きさを指定して、あゆみんのアイコンを下に追いやったけど、
+これだと「左から順番に敷き詰めていって、スペースがなくなったら改行」というルールやから、
+ウインドウを広げたり狭めたりしたら、改行の場所が変わってしまうかも...*/
+
+
+/*↓1行に2つ並べて、画面を縮小したら右スクロール*/
+
+/*あゆみん*/
+.ayumin{
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin-top: 0px;
+  margin-left: 150px; 
+  margin-right: 150px;
+  margin-bottom: 300px;
+}
+.ayumin img{
+  width: 100%;
+  height: 100%;
+}
+
+/*はるねえ*/
+.harunee{
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin-top: 0px;
+  margin-left: 150px; 
+  margin-right: 150px;
+  margin-bottom: 300px;
+
+  white-space: nowrap;
+  overflow-x: scroll;
+  /*ウインドウを縮小してアイコンが隠れたら、
+  右スクロールで見れるようにする。右側のアイコンに個別に適応したけど、うまくいかない...*/
+}
+.harunee img{
+  width: 100%;
+  height: 100%;
+}
