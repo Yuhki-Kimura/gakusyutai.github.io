@@ -13,3 +13,40 @@
             <a href="https://www.instagram.com/gakushu_tai/" target="_blank"><img src="./Instagram_Glyph_Gradient.png" alt="Instagram_楽習隊">
             <li>Mail : gakushutai@gmail.com</li>
  </h2>
+
+[以下CSS インデントで開けている部分が追加したもの]
+/*不要？
+#footer .sns-navi {
+  margin: 0 0 0 auto;
+  padding: 0;
+}*/
+#footer .sns-navi li {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  padding: 0;
+  font-size: 20px;
+}
+#footer .sns-navi li:last-child {
+  margin-right: 0;
+}
+
+                              /*以下はおきむが追加0129*/
+                              #footer .sns-navi img {
+                                width:50px;
+                                height:50px;
+                                padding:0px;
+                              }
+
+@media screen and (max-width: 767px) {
+  #footer .sns-navi {
+    margin: 20px 0 0;
+    padding: 0;
+  }
+  #footer .sns-navi li {
+    margin: 0 20px 0 0;
+    padding: 0;
+    font-size: 18px;
+  }
+}
+
+/* sitenavi 不要？*/
