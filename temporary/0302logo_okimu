@@ -5,13 +5,22 @@
           <li><a href="#"><i class="fab fa-youtube"></i></a></li>
           <li><img src="Instagram_Glyph_Gradient_RGB.png"><i class="fab fa-instagram"></i></a></li>
           -->
+          
+          <!--以下9~24行目、33~38行目は3/2にゆうたが編集-->
           <!--0129byおきむ:Twitterのアイコンとリンク-->
-            <li>公式Twitter / Instagram </li>
+            
             <!--(20230223 おきむ)↓Twitterアカウント凍結によりリンク変更, インスタロゴ追加↓-->
             <!--<a href="https://twitter.com/gakushu_tai" target="_blank"><img src="./Twitter social icons - circle - blue.png" alt="Twitter_楽習隊"></a>-->
-            <a href="https://twitter.com/gakushutai" target="_blank"><img src="./Twitter social icons - circle - blue.png" alt="Twitter_楽習隊">
-            <a href="https://www.instagram.com/gakushu_tai/" target="_blank"><img src="./Instagram_Glyph_Gradient.png" alt="Instagram_楽習隊">
-            <li>Mail : gakushutai@gmail.com</li>
+            
+            <a href="https://twitter.com/gakushutai" target="_blank"><img src="./Twitter social icons - circle - blue.png" alt="Twitter_楽習隊"></a>
+            <li>Twitter : @gakushutai</li>
+                <br>
+          
+            <a href="https://www.instagram.com/gakushu_tai/" target="_blank"><img src="./Instagram_Glyph_Gradient.png" alt="Instagram_楽習隊"></a>
+            <li>Instagram : @gakushu_tai</li>
+                <br>
+            <img src="./e-mail.png" alt="eメール">
+            <li>E-mail : gakushutai@gmail.com</li>
  </h2>
 
 [以下CSS インデントで開けている部分が追加したもの]
@@ -20,12 +29,14 @@
   margin: 0 0 0 auto;
   padding: 0;
 }*/
+
 #footer .sns-navi li {
   display: inline-block;
-  margin: 0 20px 0 0;
+  margin: 10px 20px;
   padding: 0;
-  font-size: 20px;
+  font-size: 25px;
 }
+
 #footer .sns-navi li:last-child {
   margin-right: 0;
 }
