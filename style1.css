@@ -1,0 +1,507 @@
+body{
+    background-color: white;
+    color: black;
+    font-family:'メイリオ';
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.title{ /*imgで全ての画像を、iframeで埋め込んだ全ての動画を指定できる */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+img{
+    width: 150px;
+}
+
+/*ヘッダー用に限る、リンク表示はヘッダー以外はさらに変更要るかも*/
+header a{
+    color:black ; /*デフォルトで青字なのを黒字に変更*/
+    text-decoration: none ; /*デフォルトでつく下線を削除*/
+}
+
+a:hover{ /*文字列の上にポインタを置いた場合をホバーという*/
+    opacity: .5; /*ホバー状態で透明度50%*/
+}
+
+ul { /*複数の画像を横並びで表示*/
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+li:nth-child(2) {
+  margin: 0 10px;
+}
+
+#rounded img{ /*画像の角に丸みを持たせる*/
+    border-radius: 10px;
+}
+
+/*.content{
+    margin-left: 300px; /*文章を載せるところの左に余白を作る。最近のはやりの構成*//*
+    margin-right: 500px;
+}*/
+
+.subtitle{ /*謹賀新年などのサブタイトル*/
+    text-align: center;
+    color: red;
+}
+
+h1{
+    text-align:center;
+    color: orange;
+    /*height:60px;*/ /*要らない*/
+    line-height:60px;
+    font-size: 25px;
+}
+
+.container{ /*container全体にかかる*/
+  font-size: 22px; /*18pxくらい*/
+  display: flex;
+  margin-top: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
+}
+
+.container li{ /*containerのそれぞれにかかる*/
+  display: inline-block;
+  margin: 0 20px 0 0;
+  padding: 0 10px; /*2つ目の値で要素の間隔を規定*/
+  margin-left: 20px;
+}
+
+
+
+
+
+
+/*「隊員紹介」のフォント*/
+.head-description h2{
+  font-size: 40px;
+  margin-left: 500px;
+  font-family:"Hiragino Sans";
+  color:orange;
+}
+.head-description p{
+  font-size: 15px;
+  margin-left: 370px;
+  font-family:"Hiragino Sans";
+  color:black;
+}
+.namae{
+  font-size: 20px;
+  color: orange;
+}
+
+/*画像と説明を後で楽習隊員に置き換える。*/
+/*親要素のエリア*/
+.otameshiarea{
+  position: relative;
+  width: 1000px;
+  height: 3000px;
+  margin-left:100px;
+  margin-right:100px;
+  background-color:aqua;
+}
+
+
+
+/*１人目*/
+.otameshiarea1{
+  /*アイコンを追加したら、追加したclassの設定の
+  topとleftをいじる必要あり。*/
+  position: absolute; 
+  top:0px;
+  left: 250px;
+  /*↑親otameshiareaの左端から余白250pxを挟んで
+  子otameshiarea1を配置。*/
+
+  width: 500px; 
+  height: 500px; 
+  background-color: azure; 
+  
+}
+.otameshiicon1{
+/*otameshiicon1は、otameshiarea1の子要素なので、
+otameshiarea1自体の位置をposition: absolute;で決めたとしても、
+この要素内にposition: relative; を設定して問題ない。
+（勝手にotameshiarea内に配置される）。*/
+position: relative;/*←吹き出しの位置をabsoluteで設定する際に重要！！*/
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;/*上下の余白0, 左右の余白均等*/
+}
+.otameshiicon1 img{
+  width: 100%;
+  height: 100%;
+}
+
+.otameshiicon1:hover img{/*hover(画像にカーソルを合わせると明るくなる)*/
+opacity: 0.6; /*画像の不透明度*/
+transition-duration: 0.3s;
+cursor:pointer;
+}
+
+/*２人目*/
+.otameshiarea2{
+  /*次の子エリアotameshiarea2の位置もabsoluteで設定する。親エリアotameshiareaの起点に対して
+  何px離れた位置にある？*/
+  position: absolute;
+  top:500px;
+  left:0px;
+  
+  width: 500px; 
+  height: 500px; 
+  background-color:antiquewhite; 
+  
+}
+.otameshiicon2{
+  position: relative;/*←アイコンの中に文字を入れる際に重要！！*/
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;/*上下の余白0, 左右の余白均等*/
+  }
+.otameshiicon2 img{
+  width: 100%;
+  height: 100%;
+}
+.otameshiicon2:hover img{/*hover(画像にカーソルを合わせると明るくなる)*/
+  opacity: 0.6; /*画像の透明度*/
+  transition-duration: 0.3s;
+  cursor:pointer;
+  }
+
+
+/*３人目*/
+.otameshiarea3{
+  position:absolute;
+  top:500px;
+  left:500px;
+  width: 500px; 
+  height: 500px; 
+  background-color:darkgray; 
+}
+.otameshiicon3{
+  position: relative;/*←アイコンの中に文字を入れる際に重要！！*/
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;/*上下の余白0, 左右の余白均等*/
+  }
+.otameshiicon3 img{
+  width: 100%;
+  height: 100%;
+}
+.otameshiicon3:hover img{/*hover(画像にカーソルを合わせると明るくなる)*/
+  opacity: 0.6; /*画像の透明度*/
+  transition-duration: 0.3s;
+  cursor:pointer;
+  }
+
+
+/*4人目*/
+.otameshiarea4{
+  position: absolute;
+  top: 1000px;
+  left:0px;
+  
+  width: 500px; 
+  height: 500px; 
+  background-color:darkgray; 
+  
+}
+.otameshiicon4{
+  position: relative;/*←アイコンの中に文字を入れる際に重要！！*/
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;/*上下の余白0, 左右の余白均等*/
+  }
+.otameshiicon4 img{
+  width: 100%;
+  height: 100%;
+}
+.otameshiicon4:hover img{/*hover(画像にカーソルを合わせると明るくなる)*/
+  opacity: 0.6; /*画像の透明度*/
+  transition-duration: 0.3s;
+  cursor:pointer;
+  }
+
+
+/*5人目*/
+.otameshiarea5{
+  position: absolute;
+  top:1000px;
+  left: 500px;
+  
+  width: 500px; 
+  height: 500px; 
+  background-color:antiquewhite; 
+  
+}
+.otameshiicon5{
+  position: relative;/*←アイコンの中に文字を入れる際に重要！！*/
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;/*上下の余白0, 左右の余白均等*/
+  }
+.otameshiicon5 img{
+  width: 100%;
+  height: 100%;
+}
+.otameshiicon5:hover img{/*hover(画像にカーソルを合わせると明るくなる)*/
+  opacity: 0.6; /*画像の透明度*/
+  transition-duration: 0.3s;
+  cursor:pointer;
+  }
+
+
+/*6人目*/
+.otameshiarea6{
+  position: absolute;
+  top:1500px;
+  left:0px;
+  
+  width: 500px; 
+  height: 500px; 
+  background-color:antiquewhite; 
+  
+}
+.otameshiicon6{
+  position: relative;/*←アイコンの中に文字を入れる際に重要！！*/
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;/*上下の余白0, 左右の余白均等*/
+  }
+.otameshiicon6 img{
+  width: 100%;
+  height: 100%;
+}
+.otameshiicon6:hover img{/*hover(画像にカーソルを合わせると明るくなる)*/
+  opacity: 0.6; /*画像の透明度*/
+  transition-duration: 0.3s;
+  cursor:pointer;
+  }
+
+
+/*7人目*/
+.otameshiarea7{
+  position: absolute;
+  top:1500px;
+  left: 500px;
+  
+  width: 500px; 
+  height: 500px; 
+  background-color:darkgray; 
+  
+}
+.otameshiicon7{
+  position: relative;/*←アイコンの中に文字を入れる際に重要！！*/
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;/*上下の余白0, 左右の余白均等*/
+  }
+.otameshiicon7 img{
+  width: 100%;
+  height: 100%;
+}
+.otameshiicon7:hover img{/*hover(画像にカーソルを合わせると明るくなる)*/
+  opacity: 0.6; /*画像の透明度*/
+  transition-duration: 0.3s;
+  cursor:pointer;
+  }
+
+
+/*8人目*/
+.otameshiarea8{
+  position: absolute;
+  top:2000px;
+  left:0px;
+  
+  width: 500px; 
+  height: 500px; 
+  background-color:darkgray;
+  
+}
+.otameshiicon8{
+  position: relative;/*←アイコンの中に文字を入れる際に重要！！*/
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;/*上下の余白0, 左右の余白均等*/
+  }
+.otameshiicon8 img{
+  width: 100%;
+  height: 100%;
+}
+.otameshiicon8:hover img{/*hover(画像にカーソルを合わせると明るくなる)*/
+  opacity: 0.6; /*画像の透明度*/
+  transition-duration: 0.3s;
+  cursor:pointer;
+  }
+
+/*9人目*/
+.otameshiarea9{
+  position: absolute;
+  top:2000px;
+  left:500px;
+  
+  width: 500px; 
+  height: 500px; 
+  background-color:antiquewhite; 
+  
+}
+.otameshiicon9{
+  position: relative;/*←アイコンの中に文字を入れる際に重要！！*/
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;/*上下の余白0, 左右の余白均等*/
+  }
+.otameshiicon9 img{
+  width: 100%;
+  height: 100%;
+}
+.otameshiicon9:hover img{/*hover(画像にカーソルを合わせると明るくなる)*/
+  opacity: 0.6; /*画像の透明度*/
+  transition-duration: 0.3s;
+  cursor:pointer;
+  }
+
+/*10人目*/
+.otameshiarea10{
+  position: absolute;
+  top:2500px;
+  left:0px;
+  
+  width: 500px; 
+  height: 500px; 
+  background-color:antiquewhite; 
+  
+}
+.otameshiicon10{
+  position: relative;/*←アイコンの中に文字を入れる際に重要！！*/
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;/*上下の余白0, 左右の余白均等*/
+  }
+.otameshiicon10 img{
+  width: 100%;
+  height: 100%;
+}
+.otameshiicon10:hover img{/*hover(画像にカーソルを合わせると明るくなる)*/
+  opacity: 0.6; /*画像の透明度*/
+  transition-duration: 0.3s;
+  cursor:pointer;
+  }
+
+
+/*11人目*/
+.otameshiarea11{
+  position: absolute;
+  top:2500px;
+  left:500px;
+  
+  width: 500px; 
+  height: 500px; 
+  background-color:darkgray;
+  
+}
+.otameshiicon11{
+  position: relative;/*←アイコンの中に文字を入れる際に重要！！*/
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;/*上下の余白0, 左右の余白均等*/
+  }
+.otameshiicon11 img{
+  width: 100%;
+  height: 100%;
+}
+.otameshiicon11:hover img{/*hover(画像にカーソルを合わせると明るくなる)*/
+  opacity: 0.6; /*画像の透明度*/
+  transition-duration: 0.3s;
+  cursor:pointer;
+  }
+
+
+/*新入隊員募集中*/
+.otameshiarearecruit{
+  position: absolute;
+  top:3000px;
+  left:250px;
+  
+  width: 500px; 
+  height: 500px; 
+  background-color:lightgreen;
+  
+}
+.otameshiiconrecruit{
+  position: relative;/*←アイコンの中に文字を入れる際に重要！！*/
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;/*上下の余白0, 左右の余白均等*/
+  }
+.otameshiiconrecruit img{
+  width: 100%;
+  height: 100%;
+}
+.otameshiiconrecruit:hover img{/*hover(画像にカーソルを合わせると明るくなる)*/
+  opacity: 0.6; /*画像の透明度*/
+  transition-duration: 0.3s;
+  cursor:pointer;
+  }
+
+
+  
+/*吹き出しを表示するためのチェックボックスのセッティング。
+全てのチェックボックスで共通*/
+.switch_setting{
+  display:none;
+}
+/*アイコンクリック時の吹き出しの設定 （すべての吹き出しに共通）*/
+.description{
+  margin-top:5px; /* imgとの距離 */
+  width: 350px; /* 横幅 */
+  height: 250px;/* 縦幅 */
+  position: absolute;
+  top: 200px; /* Y軸の位置。起点は親要素の「おためし１」アイコンの左上。上下位置の調節にこっちはいじらない。いじるのはmargin-top. */
+  left: -75px;/* X軸の位置。起点は親要素の「おためし１」アイコンの左上。 */
+
+  border-radius: 10px; /* 角の丸み */
+  border: 2px solid orange;
+  background-color: white; /* ツールチップの背景色 */
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  visibility:hidden;  /*ツールチップを非表示に*/
+  opacity: 0; /* 不透明度を0％に */
+
+  transition: all 1s; /* 吹き出しが表示されて下に下りていく速度 */
+} 
+
+.description::before { /* 吹き出しの「しっぽ」（＿＿＿＞←ここ　のスタイル */
+  content: "";
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom: 12px solid orange;
+  position: absolute;
+  bottom: 100%;
+  left: 47%;
+}
+
+/*アイコンクリック後の設定（すべてのアイコンに共通）*/
+.switch_setting:checked + .fukidashi .description{
+  top:220px; /*.description1の位置(200px)からの移動先の位置*/
+  visibility: visible;
+  opacity: 1;
+  
+}
+
+
+
+
+/*ここからフッター要素（3/2HTMLから削除。復活させる場合はほかのページのをコピペ）*/
