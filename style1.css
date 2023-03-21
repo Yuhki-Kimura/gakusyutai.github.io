@@ -1,7 +1,7 @@
 body{
     background-color: white;
     color: black;
-    font-family: 'YuGothic','Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
+    font-family:'メイリオ';
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -14,6 +14,16 @@ body{
 }
 img{
     width: 150px;
+}
+
+/*ヘッダー用に限る、リンク表示はヘッダー以外はさらに変更要るかも*/
+header a{
+    color:black ; /*デフォルトで青字なのを黒字に変更*/
+    text-decoration: none ; /*デフォルトでつく下線を削除*/
+}
+
+a:hover{ /*文字列の上にポインタを置いた場合をホバーという*/
+    opacity: .5; /*ホバー状態で透明度50%*/
 }
 
 ul { /*複数の画像を横並びで表示*/
@@ -42,10 +52,12 @@ li:nth-child(2) {
     color: red;
 }
 
-.h1{
+h1{
     text-align:center;
-    height:60px;
+    color: orange;
+    /*height:60px;*/ /*要らない*/
     line-height:60px;
+    font-size: 25px;
 }
 
 .container{ /*container全体にかかる*/
